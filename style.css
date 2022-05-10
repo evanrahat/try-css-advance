@@ -39,7 +39,7 @@ header {
 .top_header .logo {
     padding: 10px;
     background-color: #2E2D2D;
-    width: 900px;
+    width: 60%;
     color: #ffffff;
     cursor: pointer;
 }
