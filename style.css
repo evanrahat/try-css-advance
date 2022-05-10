@@ -23,7 +23,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width:100%;
     padding: 20px;
+    margin: auto;
 }
 
 .main_header {
@@ -39,11 +41,14 @@ header {
 .top_header .logo {
     padding: 10px;
     background-color: #2E2D2D;
-    width: 60%;
+    width: 40%;
     color: #ffffff;
     cursor: pointer;
 }
-
+.menu {
+    /* background-color: red; */
+    width: 45%;
+}
 .top_header .menu ul li {
     display: inline;
     padding: 10px;
