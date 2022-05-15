@@ -2,118 +2,225 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,600&display=swap');
 }
 
 .container {
     /* background-color: blueviolet; */
-    width: 95%;
-    padding: 10px;
+    height: auto;
+    width: 90%;
     margin: auto;
 }
 
 header {
     background-image: url(./pexels-eberhard-grossgasteiger-1292115.jpg);
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    width: 100%;
+    height: 94%;
+    margin: auto;
+    position: relative;
 }
 
 .top_header {
     /* background-color: red; */
+    height: 150px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width:100%;
-    padding: 20px;
     margin: auto;
-}
-
-.main_header {
-    height: 50%;
-}
-
-.bottom_header {
-    height: 15%;
-    justify-content: center;
-    align-items: center;
 }
 
 .top_header .logo {
-    padding: 10px;
-    background-color: #2E2D2D;
-    width: 40%;
-    color: #ffffff;
+    background-color: #2e2d2d;
+    opacity: 70%;
+    color: #fff;
+    width: 45%;
+    padding: 20px;
+    position: relative;
+    left: 30px;
     cursor: pointer;
 }
-.menu {
+
+.icon-social {
     /* background-color: red; */
-    width: 45%;
-}
-.top_header .menu ul li {
-    display: inline;
-    padding: 10px;
+    width: 40%;
+    text-align: center;
+    position: relative;
+    right: 30px;
 }
 
-.top_header .menu ul li a {
+.icon-social ul li {
+    display: inline-block;
+    padding: 5px;
+    /* background-color: wheat; */
+}
+
+.icon-social ul li a {
+    padding: 5px;
+    margin: 15px;
+    font-size: 14px;
+    color: #2e2d2d;
     text-decoration: none;
-    padding: 7px;
-    color: black;
+    /* border: 1px solid #2e2d2d; */
+    border-radius: 10px;
+    transition: ease-in-out 0.6s;
+}
+
+.icon-social ul li a:hover {
+    background-color: #2e2d2d;
+    color: #fff;
+    margin: 25px;
+    box-shadow: -0.5px 20px 20px -10px #2E2D2D
+}
+
+.bottom_header {
+    background-color: black;
+    height: 50px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+.bottom_header .menu {
+    /* border: 1px solid black; */
+    width: 50%;
+    height: 30px;
+}
+
+.bottom_header .menu ul li {
+    display: inline-block;
+    /* border: 1px solid black; */
+    margin: 10px;
+}
+
+.bottom_header .menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 10px;
+    padding: 8px 20px;
+    /* border: 1px double #2e2d2d; */
+    opacity: 70%;
+    font-size: 12px;
+    transition: ease-in-out 0.5s;
     border-radius: 10px;
 }
 
-.top_header .menu ul li a:hover {
-    background-color: #2E2D2D;
-    color: #ffffff;
-    transition: 0.8s;
-    box-shadow: -0.5px 20px 20px -10px #2E2D2D;
+.bottom_header .menu ul li a:hover {
+    background-color: #fff;
+    color: #2e2d2d;
+    /* box-shadow: -0.5px 20px 20px -10px #fff; */
 }
 
-.bottom_header .icon-social {
-    /* background-color: #2E2D2D; */
-    width: 100%;
-    text-align: center;
-}
-
-.bottom_header .icon-social a {
-    padding: 20px;
-    color: #ffffff;
-}
-
-.bottom_header .icon-social a i::after {
-    content: '';
-    height: 3px;
-    width: 100%;
-    /* background-color: #ffffff; */
-    display: block;
+.main_header {
+    /* background-color: red; */
+    height: 590px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     margin: auto;
-    transition: 0.5s;
 }
 
-.bottom_header .icon-social a i:hover::after {
-    background-color: #ffffff;
-}
-
-.main_header .caption {
-    font-family: 'Oleo Script', cursive;
-    opacity: 100%;
+.box {
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: rgba(194, 194, 194, 30%);
+    /* border: 1px solid black; */
+    width: 70%;
+    height: 60%;
     text-align: center;
+    padding: 30px;
+    position: relative;
+}
+
+.box .caption {
+    font-size: 40px;
+    font-family: 'Roboto Mono', monospace;
+    cursor: pointer;
+}
+
+.box .caption-here {
     font-size: 50px;
-    color: #2E2D2D;
-    margin-top: 150px;
+    font-family: 'Roboto Mono', monospace;
+    cursor: pointer;
 }
-.main_header p {
-    margin: auto;
-    color: #ffffff;
-    opacity: 50%;
+
+.heading-p {
+    font-family: 'Caveat', cursive;
+}
+
+.main h1 {
     text-align: center;
-    margin: 0px 100px 0px 100px;
-    font-size: 14px;
+    color: #fff;
+    display: inline-block;
+    background-color: #2E2D2D;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 40px;
+    border-radius: 10px;
+    display: block;
+    position:relative;
+    top:100px
 }
 
+.office {
+    background-image: linear-gradient(white, skyblue);
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 100px;
+}
+.office .dubai img,
+.bangladesh img,
+.london img {
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 300px;
+    height: 600px;
+    cursor: pointer;
+}
+.dubai,
+.bangladesh,
+.london {
+    background-color: red;
+    border-radius: 12px;
+    opacity: 100%;
+    width: 300px;
+    height: 600px;
+}
 
+.office .dubai img:hover, 
+.bangladesh img:hover, 
+.london img:hover {
+    opacity: 50%;
+    transition: ease-in-out 0.5s;
+    /* border: 1px solid black; */
+    overflow: hidden;
+}
 
-
-
-
-
-
+.dubai h2,
+.bangladesh h2,
+.london h2 {
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+    font-size: 30px;
+    font-family: 'Roboto Mono', monospace;
+    color: #2e2d2d;
+    text-shadow: 3px 2px 2px #2e2d2d;
+     /* border: 1px solid black; */
+}
